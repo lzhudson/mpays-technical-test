@@ -1,3 +1,28 @@
+.sales-simulator {
+  background: url('../images/simulator-background-mobile.png');
+  padding-top: toRem(40);
+  padding-bottom: toRem(45);
+
+  @media (min-width: 992px) {
+    background: url('../images/simulator-background.png');
+    padding-top: toRem(142);
+    padding-bottom: toRem(149);
+  }
+
+  &__container {
+    @media (min-width: 992px) {
+      display: grid;
+      grid-template-columns: 371px 1fr;
+      gap: toRem(65);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(28);
+  }
+}
 .testimonials {
   &__title {
     text-align: center;
