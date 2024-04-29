@@ -1,0 +1,60 @@
+.advantage-card {
+  background-color: $gray-400;
+  display: flex;
+  border-radius: 16px;
+  flex-direction: column;
+  @media (min-width: 992px) {
+    height: 475px;
+  }
+
+  &__image-container {
+    order: 0;
+    @media (min-width: 992px) {
+      order: initial;
+      position: relative;
+    }
+  }
+  &__content {
+    order: 1;
+    padding: toRem(12) toRem(36) toRem(46) toRem(36);
+    display: flex;
+    flex-direction: column;
+    gap: toRem(26);
+    @media (min-width: 992px) {
+      max-width: 440px;
+      padding: toRem(77) toRem(0) toRem(78) toRem(76);
+      padding-top: 77px;
+      padding-left: 76px;
+      display: flex;
+      flex-direction: column;
+      gap: toRem(36);
+    }
+  }
+  &__title {
+    font-weight: 500;
+    font-size: toRem(21);
+    @media (min-width: 992px) {
+      font-size: toRem(28);
+    }
+  }
+  &__info {
+    font-size: toRem(14);
+    line-height: 150%;
+    @media (min-width: 992px) {
+      font-size: toRem(18);
+    }
+  }
+  &__link {
+    color: $purple-500;
+    font-size: toRem(14);
+  }
+  &__image {
+    width: 100%;
+    @media (min-width: 992px) {
+      width: auto;
+      position: absolute;
+      top: -42px;
+      right: 0;
+    }
+  }
+}
