@@ -1,0 +1,81 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: toRem(23) 0;
+  @media (min-width: 992px) {
+    padding: toRem(30) 0;
+  }
+  &__logo {
+    height: 25px;
+    @media (min-width: 992px) {
+      height: auto;
+    }
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: $white;
+    flex-direction: column;
+    z-index: 99999999;
+    width: 100%;
+    padding: toRem(55) toRem(44) toRem(0) toRem(44);
+    @media (min-width: 992px) {
+      position: static;
+      height: auto;
+      width: auto;
+      background: none;
+      flex-direction: row;
+      z-index: initial;
+      width: auto;
+      padding: 0;
+    }
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__hamburguer-menu {
+    background-color: transparent;
+    border: none;
+    line-height: 0;
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  &__close-menu {
+    align-self: flex-end;
+    border: none;
+    background: none;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  &__link-user {
+    line-height: 0;
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+}
