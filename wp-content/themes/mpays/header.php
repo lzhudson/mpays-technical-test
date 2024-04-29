@@ -11,3 +11,38 @@
   <?php wp_head(); ?>
 </head>
 <body>
+  <header class="header">
+    <div class="container header__container">
+      <button class="header__hamburguer-menu" title="Abrir menu">
+        <img src="<?php echo PATH_TO_IMAGES . 'hamburguer-icon.svg';?>" alt="Ícone do menu hamburger">
+      </button>
+      <div class="header__logo-container">
+        <img class="header__logo" src="<?php echo PATH_TO_IMAGES . 'logo-mpays-header.svg';?>" alt="MPays Logo">
+      </div>
+      <nav class="header__nav">
+        <button class="header__close-menu" title="Fechar menu">
+          <img src="<?php echo PATH_TO_IMAGES . 'close-icon.svg';?>" alt="Ícone de fechar o menu">
+        </button>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="">Soluções</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Tarifas</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Depoimentos</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Contato</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Entrar</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header__link-user" href="">
+        <img src="<?php echo PATH_TO_IMAGES . 'user-icon.svg';?>" alt="Ícone de usuário">
+      </a>
+    </div>
+  </header>
