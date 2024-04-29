@@ -1,0 +1,8 @@
+.section-info {
+  font-size: toRem(12);
+  margin-top: toRem(14);
+  line-height: 150%;
+  @media (min-width: 992px) {
+    font-size: toRem(18);
+  }
+}

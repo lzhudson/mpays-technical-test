@@ -1,5 +1,61 @@
 <?php get_header(); ?>
 <main>
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="testimonials__title title">
+        Depoimentos
+      </h2>
+      <p class="testimonials__info section-info">O suporte ao cliente é nossa primeira prioridade.</p>
+
+      <div class="testimonials__slider">
+        <div>
+          <div class="testimonial-card">
+            <img class="testimonial-card__image" src="<?php echo PATH_TO_IMAGES . 'carlos-eduardo-amaral.png';?>"
+              alt="Foto do Carlos Eduardo Amaral">
+            <div class="testimonial-card__content">
+              <img class="testimonial-card__icon" src="<?php echo PATH_TO_IMAGES . 'quote.svg';?>" alt="Ícone de aspas">
+              <q class="testimonial-card__quote">A mpays foi a plataforma onde eu tive a maior taxa de aprovação de
+                crédito
+                do mercado.</q>
+              <h3 class="testimonial-card__name">Carlos Eduardo Amaral</h3>
+              <span class="testimonial-card__position"><abbr title="Chief Executive Officer">CEO</abbr> da Amaral
+                Mídia</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="testimonial-card">
+            <img class="testimonial-card__image" src="<?php echo PATH_TO_IMAGES . 'carlos-eduardo-amaral.png';?>"
+              alt="Foto do Carlos Eduardo Amaral">
+            <div class="testimonial-card__content">
+              <img class="testimonial-card__icon" src="<?php echo PATH_TO_IMAGES . 'quote.svg';?>" alt="Ícone de aspas">
+              <q class="testimonial-card__quote">A mpays foi a plataforma onde eu tive a maior taxa de aprovação de
+                crédito
+                do mercado.</q>
+              <h3 class="testimonial-card__name">Carlos Eduardo Amaral</h3>
+              <span class="testimonial-card__position"><abbr title="Chief Executive Officer">CEO</abbr> da Amaral
+                Mídia</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="testimonial-card">
+            <img class="testimonial-card__image" src="<?php echo PATH_TO_IMAGES . 'carlos-eduardo-amaral.png';?>"
+              alt="Foto do Carlos Eduardo Amaral">
+            <div class="testimonial-card__content">
+              <img class="testimonial-card__icon" src="<?php echo PATH_TO_IMAGES . 'quote.svg';?>" alt="Ícone de aspas">
+              <q class="testimonial-card__quote">A mpays foi a plataforma onde eu tive a maior taxa de aprovação de
+                crédito
+                do mercado.</q>
+              <h3 class="testimonial-card__name">Carlos Eduardo Amaral</h3>
+              <span class="testimonial-card__position"><abbr title="Chief Executive Officer">CEO</abbr> da Amaral
+                Mídia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="create-account">
     <div class="container">
       <div class="create-account__content">
