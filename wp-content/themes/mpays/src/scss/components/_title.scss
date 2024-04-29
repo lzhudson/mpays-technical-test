@@ -1,0 +1,7 @@
+.title {
+  font-size: toRem(28);
+  @media (min-width: 992px) {
+    font-size: toRem(49);
+  }
+  font-weight: 500;
+}
