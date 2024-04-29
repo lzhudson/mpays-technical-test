@@ -1,0 +1,40 @@
+.menu {
+  $root: &;
+  display: flex;
+  align-items: flex-start;
+  gap: toRem(30);
+  list-style: none;
+  flex-direction: column;
+  @media (min-width: 992px) {
+    flex-direction: row;
+    align-items: center;
+  }
+  &__item {
+    &:last-child {
+      #{$root}__link {
+        @media (min-width: 992px) {
+          border: 1px solid $white;
+          width: 105px;
+          height: 28px;
+          border-radius: 5px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+      }
+    }
+  }
+  &__link {
+    font-size: toRem(14);
+    line-height: 150%;
+    color: $purple-300;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-weight: 500;
+    @media (min-width: 992px) {
+      color: $white;
+    }
+  }
+}
