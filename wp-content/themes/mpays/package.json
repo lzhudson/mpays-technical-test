@@ -45,5 +45,8 @@
     "last 3 version",
     "> 2%",
     "IE 11"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
 }
