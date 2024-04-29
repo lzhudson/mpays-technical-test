@@ -1,5 +1,77 @@
 <?php get_header(); ?>
 <main>
+  <section class="advantages">
+    <div class="container">
+      <div class="advantages__slider">
+        <div>
+          <div class="advantage-card">
+            <div class="advantage-card__content">
+              <h2 class="advantage-card__title">Pagamentos com máxima aprovação</h2>
+              <p class="advantage-card__info">
+                Venda online com a maior taxa de aprovação possível. Reduza o número de vendas recusadas, autorize o
+                maior
+                número de pagamentos, receba e gerencie seu dinheiro de forma flexível.
+              </p>
+              <a class="advantage-card__link" href="">Cadastre-se</a>
+            </div>
+            <div class="advantage-card__image-container">
+              <picture>
+                <source media="(min-width: 769px)" srcset="<?php echo PATH_TO_IMAGES . 'background-slider.png';?>">
+                <source media="(max-width: 768px)"
+                  srcset="<?php echo PATH_TO_IMAGES . 'background-slider-mobile.png';?>">
+                <img class="advantage-card__image" src="<?php echo PATH_TO_IMAGES . 'background-slider.png';?>"
+                  alt="Homem utilizando computador">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="advantage-card">
+            <div class="advantage-card__content">
+              <h2 class="advantage-card__title">Pagamentos com máxima aprovação</h2>
+              <p class="advantage-card__info">
+                Venda online com a maior taxa de aprovação possível. Reduza o número de vendas recusadas, autorize o
+                maior
+                número de pagamentos, receba e gerencie seu dinheiro de forma flexível.
+              </p>
+              <a class="advantage-card__link" href="">Cadastre-se</a>
+            </div>
+            <div class="advantage-card__image-container">
+              <picture>
+                <source media="(min-width: 769px)" srcset="<?php echo PATH_TO_IMAGES . 'background-slider.png';?>">
+                <source media="(max-width: 768px)"
+                  srcset="<?php echo PATH_TO_IMAGES . 'background-slider-mobile.png';?>">
+                <img class="advantage-card__image" src="<?php echo PATH_TO_IMAGES . 'background-slider.png';?>"
+                  alt="Homem utilizando computador">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="advantage-card">
+            <div class="advantage-card__content">
+              <h2 class="advantage-card__title">Pagamentos com máxima aprovação</h2>
+              <p class="advantage-card__info">
+                Venda online com a maior taxa de aprovação possível. Reduza o número de vendas recusadas, autorize o
+                maior
+                número de pagamentos, receba e gerencie seu dinheiro de forma flexível.
+              </p>
+              <a class="advantage-card__link" href="">Cadastre-se</a>
+            </div>
+            <div class="advantage-card__image-container">
+              <picture>
+                <source media="(min-width: 769px)" srcset="<?php echo PATH_TO_IMAGES . 'background-slider.png';?>">
+                <source media="(max-width: 768px)"
+                  srcset="<?php echo PATH_TO_IMAGES . 'background-slider-mobile.png';?>">
+                <img class="advantage-card__image" src="<?php echo PATH_TO_IMAGES . 'background-slider.png';?>"
+                  alt="Homem utilizando computador">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="sales-simulator">
     <div class="container sales-simulator__container">
       <div class="sales-simulator__content">
