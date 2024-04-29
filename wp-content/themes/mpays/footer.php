@@ -1,3 +1,9 @@
+<?php
+  $groupFooter = get_field('footer', 'option');
+  $copyrightText = $groupFooter['copyright_text'];
+  $address = $groupFooter['address'];
+  $socialLinks = $groupFooter['social_links'];
+?>
   <footer class="footer">
     <div class="container">
       <div class="footer__info">
@@ -7,61 +13,45 @@
               Endereço
             </span>
             <address class="footer-menu__address">
-              R. dos Andradas, 1234 <br/>
-              Centro Histórico <br/>
-              Porto Alegre - RS <br/>
-              90020-008
+              <?php echo $address;?>
             </address>
           </div>
           <div class="footer-menu">
             <span class="footer-menu__title">
               Legal
             </span>
-            <ul class="footer-menu__list">
-              <li class="footer-menu__item">
-                <a class="footer-menu__link" href="">
-                  Termos de uso
-                </a>
-              </li>
-              <li class="footer-menu__item">
-                <a class="footer-menu__link" href="">
-                  Política de privacidade
-                </a>
-              </li>
-            </ul>
+            <?php
+              wp_nav_menu( array(
+                'theme_location' => 'legal-menu',
+                'menu_id' => 'legal-menu',
+                'menu_class' => 'footer-menu__list',
+              ));
+            ?>
           </div>
           <div class="footer-menu">
             <span class="footer-menu__title">
               Contato
             </span>
-            <ul class="footer-menu__list">
-              <li class="footer-menu__item">
-                <a class="footer-menu__link" href="">
-                  contato@mpays.com
-                </a>
-              </li>
-              <li class="footer-menu__item">
-                <a class="footer-menu__link" href="">
-                  (51) 98314.3325
-                </a>
-              </li>
-            </ul>
+            <?php
+              wp_nav_menu( array(
+                'theme_location' => 'contact-menu',
+                'menu_id' => 'contact-menu',
+                'menu_class' => 'footer-menu__list',
+              ));
+            ?>
             <ul class="footer-menu__social-list">
-              <li class="footer-menu__item">
-                <a href="" title="MPays Linkedin Link">
-                  <img src="<?php echo PATH_TO_IMAGES . 'linkedin.svg';?>" alt="MPays Linkedin">
-                </a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="" title="MPays Facebook link">
-                  <img src="<?php echo PATH_TO_IMAGES . 'facebook.svg';?>" alt="MPays Facebook">
-                </a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="" title="MPays Instagram link">
-                  <img src="<?php echo PATH_TO_IMAGES . 'instagram.svg';?>" alt="MPays Instagram">
-                </a>
-              </li>
+              <?php foreach($socialLinks as $socialLink) : ?>
+                <?php
+                  $socialLinkName = $socialLink['name'];
+                  $socialLinkNameInLowerCase = strtolower($socialLinkName);
+                  $socialLinkUrl = $socialLink['link'];
+                ?>
+                <li class="footer-menu__item">
+                  <a href="<?php echo $socialLinkUrl;?>" title="MPays <?php echo $socialLinkName;?> Link">
+                    <img src="<?php echo PATH_TO_IMAGES . $socialLinkNameInLowerCase . '.svg';?>" alt="MPays <?php echo $socialLinkName;?>">
+                  </a>
+                </li>
+              <?php endforeach;?>
             </ul>
           </div>
           <div class="footer-menu">
@@ -111,11 +101,7 @@
         <img src="<?php echo PATH_TO_IMAGES . 'logo-mpays-footer.svg';?>" alt="MPays Logo Footer">
       </div>
       <p class="footer__copyright">
-        mpays é um produto da Multti Tecnologia e Integrações, empresa brasileira registrada no
-        CNPJ nº 33.511.889/0001-20. A atividade de subcredenciamento é dispensada de autorização do
-        Banco Central do Brasil, conforme termos da Circular nº 3.885/2018. Demais dispositivos
-        aplicáveis, como o disposto nas Circulares nº 3.682/2013, 3.886/2018, 3.952/2019 e
-        Resolução nº 24/2020 são rigorosamente cumpridos.
+        <?php echo $copyrightText;?>
       </p>
     </div>
   </footer>
