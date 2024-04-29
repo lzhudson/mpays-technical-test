@@ -1,0 +1,22 @@
+{
+    "key": "ui_options_page_663026fb343b1",
+    "title": "Tema",
+    "active": true,
+    "menu_order": 0,
+    "page_title": "Tema",
+    "menu_slug": "theme-settings",
+    "parent_slug": "none",
+    "advanced_configuration": 1,
+    "icon_url": "dashicons-feedback",
+    "menu_title": "",
+    "position": "",
+    "redirect": 0,
+    "description": "",
+    "update_button": "Atualizar",
+    "updated_message": "Opções atualizadas",
+    "capability": "edit_posts",
+    "data_storage": "options",
+    "post_id": "",
+    "autoload": 0,
+    "modified": 1714431802
+}
