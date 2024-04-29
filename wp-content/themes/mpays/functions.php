@@ -13,5 +13,7 @@ function themeStyle() {
 add_action('wp_enqueue_scripts', 'themeStyle');
 
 
+// Inc
+include_once get_template_directory() . '/inc/menus/menus.php';
 
 ?>
