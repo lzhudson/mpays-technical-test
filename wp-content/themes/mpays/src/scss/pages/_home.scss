@@ -1,3 +1,43 @@
+.testimonials {
+  &__title {
+    text-align: center;
+  }
+  &__info {
+    text-align: center;
+    margin-top: toRem(8);
+  }
+  &__slider {
+    margin-top: toRem(70);
+    .slick-slide {
+      margin: 60px 27px 0 27px;
+    }
+    .slick-list {
+      margin: 0 -27px;
+    }
+    .slick-dots {
+      bottom: -40px;
+      li {
+        margin: 0 4px 0 0;
+        button {
+          padding: 0;
+          &::before {
+            font-size: 12px;
+            color: $gray-600;
+            opacity: 1;
+          }
+        }
+        &.slick-active {
+          button {
+            &::before {
+              font-size: 16px;
+              color: $purple-500;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .create-account {
   margin-top: 120px;
   margin-bottom: 100px;
@@ -8,21 +48,6 @@
     @media (min-width: 992px) {
       flex-direction: row;
       gap: toRem(125);
-    }
-  }
-  &__title {
-    font-size: toRem(28);
-    @media (min-width: 992px) {
-      font-size: toRem(49);
-    }
-    font-weight: 500;
-  }
-  &__info {
-    font-size: toRem(12);
-    margin-top: toRem(14);
-    line-height: 150%;
-    @media (min-width: 992px) {
-      font-size: toRem(18);
     }
   }
   &__form {
