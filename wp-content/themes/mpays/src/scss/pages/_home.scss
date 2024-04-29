@@ -1,3 +1,36 @@
+.advantages {
+  margin-top: 100px;
+  padding-bottom: 115px;
+  &__slider {
+    .slick-slide {
+      @media (min-width: 992px) {
+        margin-top: 42px;
+      }
+    }
+    .slick-prev, .slick-next {
+      width: 20px;
+      height: 35px;
+      background: url('../images/arrow-slider.svg');
+      &:hover {
+        color: none;
+        background: url('../images/arrow-slider.svg');
+      }
+      &::before {
+        content: "";
+      }
+    }
+    .slick-prev {
+      display: none $imp;
+    }
+    .slick-next {
+      right: -75px;
+      display: none $imp;
+      @media (min-width: 992px) {
+        display: block $imp;
+      }
+    }
+  }
+}
 .sales-simulator {
   background: url('../images/simulator-background-mobile.png');
   padding-top: toRem(40);
