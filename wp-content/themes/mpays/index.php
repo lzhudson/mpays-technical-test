@@ -1,5 +1,19 @@
 <?php get_header(); ?>
 <main>
+  <section class="hero">
+    <div class="container hero__container">
+      <div class="hero__content">
+        <h1 class="hero__title">Tecnologia e segurança pra você <strong>vender mais.</strong></h1>
+        <p class="hero__info">
+          Venda online com a segurança e tecnologia mpays. Soluções simples e
+          flexíveis para digitalizar o seu negócio.
+        </p>
+      </div>
+      <div class="hero__image-container">
+        <img class="hero__image" src="<?php echo PATH_TO_IMAGES . 'hero-pc.png';?>" alt="Computador com o sistema Dippi">
+      </div>
+    </div>
+  </section>
   <section class="advantages">
     <div class="container">
       <div class="advantages__slider">
