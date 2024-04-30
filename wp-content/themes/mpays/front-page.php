@@ -87,13 +87,18 @@
       </div>
     </div>
   </section>
+  <?php
+    $simulatorSectionGroup = get_field('simulator_section');
+    $simulatorSectionTitle = $simulatorSectionGroup['title'];
+    $simulatorSectionInformation = $simulatorSectionGroup['info'];
+  ?>
   <section class="sales-simulator">
     <div class="container sales-simulator__container">
       <div class="sales-simulator__content">
         <h2 class="title">
-          Simulador de vendas mpays
+          <?php echo $simulatorSectionTitle;?>
         </h2>
-        <p class="section-info">Veja quanto você recebe nas vendas no crédito, débito e parcelado.</p>
+        <p class="section-info"><?php echo $simulatorSectionInformation;?></p>
       </div>
       <div class="simulator">
         <form class="simulator__form" action="">
