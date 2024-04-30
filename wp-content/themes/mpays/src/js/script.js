@@ -1,3 +1,2 @@
 import './components/slider';
-
-console.log('Hello');
+import './components/mobile-menu';
