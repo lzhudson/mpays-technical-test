@@ -1,12 +1,16 @@
 <?php get_header(); ?>
 <main>
+  <?php
+    $mainSectionGroup = get_field('main_section');
+    $mainSectionTitle = $mainSectionGroup['title'];
+    $mainSectionInformation = $mainSectionGroup['info'];
+  ?>
   <section class="hero">
     <div class="container hero__container">
       <div class="hero__content">
-        <h1 class="hero__title">Tecnologia e segurança pra você <strong>vender mais.</strong></h1>
+        <h1 class="hero__title"><?php echo $mainSectionTitle;?></h1>
         <p class="hero__info">
-          Venda online com a segurança e tecnologia mpays. Soluções simples e
-          flexíveis para digitalizar o seu negócio.
+          <?php echo $mainSectionDescription;?>
         </p>
       </div>
       <div class="hero__image-container">
