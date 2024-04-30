@@ -78,4 +78,22 @@
       display: none;
     }
   }
+
+  &__link {
+    display: none;
+    @media (min-width: 992px) {
+      display: block;
+      width: 105px;
+      height: 28px;
+      border: 1px solid $white;
+      margin-left: toRem(30);
+      text-decoration: none;
+      color: $white;
+      border-radius: 5px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
