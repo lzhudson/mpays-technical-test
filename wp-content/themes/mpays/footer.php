@@ -25,6 +25,7 @@
                 'theme_location' => 'legal-menu',
                 'menu_id' => 'legal-menu',
                 'menu_class' => 'footer-menu__list',
+                'container' => false
               ));
             ?>
           </div>
@@ -37,6 +38,7 @@
                 'theme_location' => 'contact-menu',
                 'menu_id' => 'contact-menu',
                 'menu_class' => 'footer-menu__list',
+                'container' => false
               ));
             ?>
             <ul class="footer-menu__social-list">
