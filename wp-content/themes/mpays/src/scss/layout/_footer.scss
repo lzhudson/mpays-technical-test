@@ -4,7 +4,10 @@
     background-size: 100%;
   }
   @media (min-width: 992px) {
-    background: url('../images/footer-background.svg');
+    background: url('../images/footer-background.svg') no-repeat center/cover;
+  }
+  @media (min-width: 1600px) {
+    background-size: 100%;
   }
   &__info {
     padding-top: toRem(118);

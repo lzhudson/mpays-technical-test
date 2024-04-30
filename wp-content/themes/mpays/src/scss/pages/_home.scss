@@ -6,6 +6,10 @@
     background: url('../images/hero-background.svg') no-repeat center/cover;
     height: 906px;
   }
+  @media (min-width: 1600px) {
+    background-position: initial;
+    background-size: 100%;
+  }
   &__container {
     display: flex;
     align-items: center;
@@ -54,6 +58,9 @@
     padding-top: 0px;
     margin-top: -120px;
   }
+  @media (min-width: 1600px) {
+    margin-top: 0px;
+  }
   &__slider {
     .slick-slide {
       @media (min-width: 992px) {
@@ -98,6 +105,10 @@
     background: url('../images/simulator-background.png');
     padding-top: toRem(142);
     padding-bottom: toRem(149);
+  }
+
+  @media (min-width: 1600px) {
+    background-size: 100%;
   }
 
   &__container {
