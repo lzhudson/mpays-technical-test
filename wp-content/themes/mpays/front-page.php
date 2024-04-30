@@ -10,7 +10,7 @@
       <div class="hero__content">
         <h1 class="hero__title"><?php echo $mainSectionTitle;?></h1>
         <p class="hero__info">
-          <?php echo $mainSectionDescription;?>
+          <?php echo $mainSectionInformation;?>
         </p>
       </div>
       <div class="hero__image-container">
@@ -36,7 +36,6 @@
             $advantageImages = $advantage['images'];
             $advantageImageMobile = $advantageImages['image_mobile'];
             $advantageImageDesktop = $advantageImages['image_desktop'];
-            var_dump($advantageImages);
             $advantageMobileUrl = $advantageImageMobile['url'];
             $advantageMobileAlt = $advantageImageMobile['alt'];
             $advantageDesktopUrl = $advantageImageDesktop['url'];
