@@ -32,6 +32,11 @@
     z-index: 99999999;
     width: 100%;
     padding: toRem(55) toRem(44) toRem(0) toRem(44);
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
+    &--show {
+      transform: translateX(0);
+    }
     @media (min-width: 992px) {
       position: static;
       height: auto;
@@ -41,6 +46,7 @@
       z-index: initial;
       width: auto;
       padding: 0;
+      transform: none;
     }
   }
 

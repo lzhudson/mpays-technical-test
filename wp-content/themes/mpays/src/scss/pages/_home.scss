@@ -21,6 +21,9 @@
       margin: 0 auto;
     }
   }
+  &__content {
+    max-width: 455px;
+  }
   &__title {
     font-weight: 400;
     color: $white;
@@ -44,8 +47,13 @@
   }
 }
 .advantages {
-  margin-top: 100px;
-  padding-bottom: 115px;
+  padding-top: 57.5px;
+  padding-bottom: 57.5px;
+  @media (min-width: 992px) {
+    padding-bottom: 80px;
+    padding-top: 0px;
+    margin-top: -120px;
+  }
   &__slider {
     .slick-slide {
       @media (min-width: 992px) {
@@ -68,10 +76,15 @@
       display: none $imp;
     }
     .slick-next {
-      right: -75px;
       display: none $imp;
-      @media (min-width: 992px) {
+      @media (min-width: 1100px) {
         display: block $imp;
+        right: -75px;
+      }
+    }
+    .slick-dots {
+      @media (min-width: 992px) {
+        display: none;
       }
     }
   }
@@ -102,6 +115,13 @@
   }
 }
 .testimonials {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  @media (min-width: 992px) {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
   &__title {
     text-align: center;
   }
@@ -117,33 +137,15 @@
     .slick-list {
       margin: 0 -27px;
     }
-    .slick-dots {
-      bottom: -40px;
-      li {
-        margin: 0 4px 0 0;
-        button {
-          padding: 0;
-          &::before {
-            font-size: 12px;
-            color: $gray-600;
-            opacity: 1;
-          }
-        }
-        &.slick-active {
-          button {
-            &::before {
-              font-size: 16px;
-              color: $purple-500;
-            }
-          }
-        }
-      }
-    }
   }
 }
 .create-account {
-  margin-top: 120px;
-  margin-bottom: 100px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  @media (min-width: 992px) {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
   &__content {
     display: flex;
     flex-direction: column;

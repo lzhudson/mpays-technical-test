@@ -10,14 +10,17 @@
 
   @media (min-width: 992px) {
     flex-direction: row;
+    margin-top: 0;
   }
 
   &__form {
     width: 100%;
-    max-width: 351px;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    @media (min-width: 992px) {
+      max-width: 351px;
+    }
   }
 
   &__title {
